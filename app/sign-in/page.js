@@ -18,14 +18,14 @@ export default function SignInPage() {
 
   const handleSubmit = () => {
     console.log('Form submitted:', formData);
-    // Handle form submission here
+    
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 to-pink-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl overflow-hidden max-w-4xl w-full flex">
         
-        {/* Left Side - Branding */}
+        
         <div className="bg-gradient-to-br from-blue-500 to-blue-700 p-12 flex-1 flex flex-col justify-center text-white relative">
           <div className="mb-8">
             <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-8">
@@ -43,13 +43,13 @@ export default function SignInPage() {
           </p>
         </div>
 
-        {/* Right Side - Form */}
+        
         <div className="flex-1 p-12">
           <div className="max-w-md mx-auto">
             <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">Create Account</h2>
             
             <div className="space-y-6">
-              {/* Full Name */}
+              
               <div>
                 <label htmlFor="fullName" className="block text-sm font-medium text-gray-600 mb-2">
                   Full Name
@@ -65,7 +65,7 @@ export default function SignInPage() {
                 />
               </div>
 
-              {/* Email */}
+              
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-600 mb-2">
                   Email Address
@@ -81,7 +81,7 @@ export default function SignInPage() {
                 />
               </div>
 
-              {/* Password */}
+              
               <div>
                 <label htmlFor="password" className="block text-sm font-medium text-gray-600 mb-2">
                   Password
@@ -97,7 +97,6 @@ export default function SignInPage() {
                 />
               </div>
 
-              {/* Submit Button */}
               <button
                 onClick={handleSubmit}
                 className="w-full bg-blue-500 text-white py-3 px-4 rounded-lg font-medium hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors"
@@ -105,8 +104,6 @@ export default function SignInPage() {
                 Create Account
               </button>
             </div>
-
-            {/* Login Link */}
             <div className="mt-6 text-center">
               <p className="text-gray-600">
                 Already have an account?{' '}
@@ -116,7 +113,7 @@ export default function SignInPage() {
               </p>
             </div>
 
-            {/* Social Login */}
+            
             {/*}
             <div className="mt-6">
               <p className="text-center text-gray-500 mb-4">or continue with</p>

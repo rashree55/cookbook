@@ -1,0 +1,148 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Classic Pancakes",
+      "image":"/pancakes2.png",
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 tablespoons sugar",
+        "2 teaspoons baking powder",
+        "1/2 teaspoon salt",
+        "1 cup milk",
+        "2 tablespoons melted butter",
+        "1 large egg",
+        "1 teaspoon vanilla extract"
+      ],
+      "instructions": [
+        "In a bowl, mix flour, sugar, baking powder, and salt.",
+        "In another bowl, whisk together milk, melted butter, egg, and vanilla.",
+        "Combine wet and dry ingredients until just mixed.",
+        "Heat a non-stick pan over medium heat and grease lightly.",
+        "Pour 1/4 cup batter for each pancake. Cook until bubbles form, flip, and cook until golden."
+      ],
+      "prepTime": "10 mins",
+      "cookTime": "15 mins",
+      "servings": 4
+    },
+    {
+      "id": "2",
+      "title": "Spaghetti Aglio e Olio",
+      "image":"/spaghetti.png",
+      "ingredients": [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/4 cup olive oil",
+        "1/2 teaspoon red chili flakes",
+        "Salt to taste",
+        "Fresh parsley, chopped (optional)",
+        "Grated Parmesan cheese (optional)"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted boiling water until al dente. Reserve 1/4 cup pasta water and drain.",
+        "Heat olive oil in a pan over low heat. Add garlic and chili flakes, sauté until golden.",
+        "Add drained spaghetti and toss well. If needed, add reserved pasta water to loosen.",
+        "Season with salt. Garnish with parsley and Parmesan if desired."
+      ],
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "servings": 2
+    },
+
+    {
+      "id": "3",
+      "title": "Chocolate Chip Cookies",
+      "image":"/coookies.png",
+      "ingredients": [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/4 cup olive oil",
+        "1/2 teaspoon red chili flakes",
+        "Salt to taste",
+        "Fresh parsley, chopped (optional)",
+        "Grated Parmesan cheese (optional)"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted boiling water until al dente. Reserve 1/4 cup pasta water and drain.",
+        "Heat olive oil in a pan over low heat. Add garlic and chili flakes, sauté until golden.",
+        "Add drained spaghetti and toss well. If needed, add reserved pasta water to loosen.",
+        "Season with salt. Garnish with parsley and Parmesan if desired."
+      ],
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "servings": 2
+    },
+
+    {
+      "id": "4",
+      "title": "Healthy Green veggies Salad",
+      "image":"/salad2.png",
+      "ingredients": [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/4 cup olive oil",
+        "1/2 teaspoon red chili flakes",
+        "Salt to taste",
+        "Fresh parsley, chopped (optional)",
+        "Grated Parmesan cheese (optional)"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted boiling water until al dente. Reserve 1/4 cup pasta water and drain.",
+        "Heat olive oil in a pan over low heat. Add garlic and chili flakes, sauté until golden.",
+        "Add drained spaghetti and toss well. If needed, add reserved pasta water to loosen.",
+        "Season with salt. Garnish with parsley and Parmesan if desired."
+      ],
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "servings": 2
+    },
+
+    {
+      "id": "5",
+      "title": "Waffels",
+      "image":"/waffel2.png",
+      "ingredients": [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/4 cup olive oil",
+        "1/2 teaspoon red chili flakes",
+        "Salt to taste",
+        "Fresh parsley, chopped (optional)",
+        "Grated Parmesan cheese (optional)"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted boiling water until al dente. Reserve 1/4 cup pasta water and drain.",
+        "Heat olive oil in a pan over low heat. Add garlic and chili flakes, sauté until golden.",
+        "Add drained spaghetti and toss well. If needed, add reserved pasta water to loosen.",
+        "Season with salt. Garnish with parsley and Parmesan if desired."
+      ],
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "servings": 2
+    },
+
+    {
+      "id": "6",
+      "title": "Sandwich",
+      "image":"/sandwich2.png",
+      "ingredients": [
+        "200g spaghetti",
+        "4 cloves garlic, thinly sliced",
+        "1/4 cup olive oil",
+        "1/2 teaspoon red chili flakes",
+        "Salt to taste",
+        "Fresh parsley, chopped (optional)",
+        "Grated Parmesan cheese (optional)"
+      ],
+      "instructions": [
+        "Cook spaghetti in salted boiling water until al dente. Reserve 1/4 cup pasta water and drain.",
+        "Heat olive oil in a pan over low heat. Add garlic and chili flakes, sauté until golden.",
+        "Add drained spaghetti and toss well. If needed, add reserved pasta water to loosen.",
+        "Season with salt. Garnish with parsley and Parmesan if desired."
+      ],
+      "prepTime": "5 mins",
+      "cookTime": "15 mins",
+      "servings": 2
+    }
+  ]
+}
