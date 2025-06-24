@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import recipes from '../../../data/recipes.json';
+import data from '../../../data/recipes.json';
 
 export default async function RecipePage({ params }) {
-  const recipe = recipes.find(
+  const recipe = data.recipes.find(
     (r) => r.id.toString() === params.id.toString()
   );
 
@@ -30,17 +30,24 @@ export default async function RecipePage({ params }) {
 
       <h2 className="text-xl font-semibold mb-2">Ingredients</h2>
       <ul className="list-disc list-inside mb-6">
-        {recipe.ingredients.map((item, i) => (
+        {recipe.ingredients?.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
       </ul>
 
       <h2 className="text-xl font-semibold mb-2">Instructions</h2>
       <ol className="list-decimal list-inside space-y-2">
-        {recipe.instructions.map((step, i) => (
+        {recipe.instructions?.map((step, i) => (
           <li key={i}>{step}</li>
         ))}
       </ol>
     </div>
   );
+}
+
+// ✅ ⬇️ Add this at the bottom of the same file
+export async function generateStaticParams() {
+  return data.recipes.map((r) => ({
+    id: r.id.toString(),
+  }));
 }
