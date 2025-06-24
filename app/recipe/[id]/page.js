@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import data from 'app/recipe/[id]/page.js/data/recipes.json';
+import recipes from '../../../../data/recipes.json'; 
 
-export default async function RecipePage({params}) {
-
-  const recipe = data.recipes.find(
+export default async function RecipePage({ params }) {
+  const recipe = recipes.find(
     (r) => r.id.toString() === params.id.toString()
   );
 
