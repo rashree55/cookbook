@@ -39,8 +39,9 @@ const allRecipes = [
   },
 ];
 
-export default function RecipePage({ searchParams }) {
-  const searchQuery = searchParams?.search?.toLowerCase() || "";
+export default async function RecipePage({ searchParams }) {
+  const params = await searchParams;
+  const searchQuery = params?.search?.toLowerCase() || "";
 
   const filteredRecipes = searchQuery
     ? allRecipes.filter(

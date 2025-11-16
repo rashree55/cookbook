@@ -3,8 +3,9 @@ import React from "react";
 import data from '../../../data/recipes.json';
 
 export default async function RecipePage({ params }) {
+  const resolvedParams = await params;
   const recipe = data.recipes.find(
-    (r) => r.id.toString() === params.id.toString()
+    (r) => r.id.toString() === resolvedParams.id.toString()
   );
 
   if (!recipe) {
