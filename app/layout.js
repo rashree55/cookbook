@@ -1,12 +1,12 @@
-import "./globals.css";
-import Header from "@/components/Header";
+import { SessionProvider } from "next-auth/react";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <SessionProvider>
+          {children}
+        </SessionProvider>
       </body>
     </html>
   );
