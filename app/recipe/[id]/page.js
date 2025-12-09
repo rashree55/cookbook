@@ -46,7 +46,6 @@ export default async function RecipePage({ params }) {
   );
 }
 
-// ✅ ⬇️ Add this at the bottom of the same file
 export async function generateStaticParams() {
   return data.recipes.map((r) => ({
     id: r.id.toString(),

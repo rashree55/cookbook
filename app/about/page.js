@@ -3,7 +3,6 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-6">
       <div className="max-w-4xl mx-auto">
-        {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -12,7 +11,6 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Recipe Categories Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
           <div className="rounded-lg overflow-hidden shadow-lg bg-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
             <div className="overflow-hidden">
@@ -71,7 +69,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Additional Content Section */}
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why Choose Our Recipes?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">

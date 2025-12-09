@@ -7,13 +7,10 @@ import Image from "next/image";
 export default function RecipesPage() {
   const [recipes, setRecipes] = useState([]);
   const [filtered, setFiltered] = useState([]);
-
-  // Filters
   const [healthyOnly, setHealthyOnly] = useState(false);
   const [type, setType] = useState("all"); // all / veg / non-veg
   const [maxCalories, setMaxCalories] = useState(2000);
 
-  // Fetch from Supabase
   useEffect(() => {
     fetchRecipes();
   }, []);
@@ -26,7 +23,6 @@ export default function RecipesPage() {
     }
   };
 
-  // Apply filters
   useEffect(() => {
     let result = [...recipes];
 
@@ -47,10 +43,8 @@ export default function RecipesPage() {
     <div className="max-w-5xl mx-auto p-6">
       <h1 className="text-4xl font-bold mb-6">Recipes</h1>
 
-      {/* FILTER SECTION */}
       <div className="p-4 bg-gray-100 rounded-lg mb-8 flex flex-col gap-4">
 
-        {/* Healthy Filter */}
         <label className="flex items-center gap-3">
           <input
             type="checkbox"
@@ -60,7 +54,6 @@ export default function RecipesPage() {
           <span>Show Healthy Only</span>
         </label>
 
-        {/* Veg / Non-Veg Filter */}
         <select
           className="p-2 border rounded"
           value={type}
@@ -71,7 +64,6 @@ export default function RecipesPage() {
           <option value="non-veg">Non-Veg</option>
         </select>
 
-        {/* Calorie Slider */}
         <div>
           <label className="block font-medium mb-1">
             Max Calories: {maxCalories}
@@ -87,7 +79,6 @@ export default function RecipesPage() {
         </div>
       </div>
 
-      {/* RECIPE CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filtered.length === 0 && (
           <p className="text-gray-500">No recipes match your filters.</p>

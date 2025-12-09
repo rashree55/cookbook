@@ -24,14 +24,10 @@ export default function Header() {
   return (
     <header className="w-full border-white bg-white">
       <nav className="max-w-10xl mx-auto flex items-center justify-between py-4 px-4">
-
-        {/* LEFT: Logo */}
         <Link href="/" className="text-3xl font-bold tracking-tight">
           <span className="text-black">Recipe</span>
           <span className="text-blue-600">Nest</span>
         </Link>
-
-        {/* RIGHT: Nav Buttons */}
         <div className="flex items-center gap-6">
 
           <Link

@@ -7,7 +7,6 @@ import { useRouter } from "next/navigation";
 export default function AddRecipePage() {
   const router = useRouter();
 
-  // FORM STATE
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [calories, setCalories] = useState("");
@@ -19,7 +18,6 @@ export default function AddRecipePage() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
 
-  // ADD INGREDIENT INPUT FIELD
   const addIngredient = () => {
     setIngredients([...ingredients, ""]);
   };
@@ -30,7 +28,6 @@ export default function AddRecipePage() {
     setIngredients(updated);
   };
 
-  // ADD STEP INPUT FIELD
   const addStep = () => {
     setSteps([...steps, ""]);
   };
@@ -41,7 +38,6 @@ export default function AddRecipePage() {
     setSteps(updated);
   };
 
-  // MAIN SUBMIT FUNCTION
   const handleSubmit = async () => {
     if (!title || !description || !calories) {
       setMessage("Please fill all required fields.");
@@ -93,24 +89,18 @@ export default function AddRecipePage() {
   return (
     <div className="max-w-2xl mx-auto p-6">
       <h2 className="text-3xl font-bold mb-6">Add New Recipe</h2>
-
-      {/* Title */}
       <input
         className="w-full p-3 border rounded mb-4"
         placeholder="Recipe Title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-
-      {/* Description */}
       <textarea
         className="w-full p-3 border rounded mb-4"
         placeholder="Description"
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-
-      {/* Calories */}
       <input
         className="w-full p-3 border rounded mb-4"
         type="number"
@@ -118,8 +108,6 @@ export default function AddRecipePage() {
         value={calories}
         onChange={(e) => setCalories(e.target.value)}
       />
-
-      {/* Veg / Non-Veg */}
       <select
         className="w-full p-3 border rounded mb-4"
         value={type}
@@ -129,7 +117,6 @@ export default function AddRecipePage() {
         <option value="non-veg">Non-Veg</option>
       </select>
 
-      {/* Healthy Toggle */}
       <label className="flex items-center space-x-3 mb-4">
         <input
           type="checkbox"
@@ -139,7 +126,6 @@ export default function AddRecipePage() {
         <span>Healthy Recipe</span>
       </label>
 
-      {/* Ingredients */}
       <h3 className="text-xl font-semibold mb-2">Ingredients</h3>
       {ingredients.map((ing, index) => (
         <input
@@ -157,7 +143,6 @@ export default function AddRecipePage() {
         + Add Ingredient
       </button>
 
-      {/* Steps */}
       <h3 className="text-xl font-semibold mb-2">Steps</h3>
       {steps.map((step, index) => (
         <textarea
@@ -175,14 +160,11 @@ export default function AddRecipePage() {
         + Add Step
       </button>
 
-      {/* Image Upload */}
       <input
         type="file"
         className="mb-4"
         onChange={(e) => setImageFile(e.target.files[0])}
       />
-
-      {/* Submit Button */}
       <button
         onClick={handleSubmit}
         className="bg-blue-600 text-white px-5 py-3 rounded w-full"
